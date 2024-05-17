@@ -1,0 +1,324 @@
+/*===========Google font link==========*/
+
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Alata&family=Arvo:wght@700&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Commissioner:wght@100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Lora&family=Manrope:wght@200..800&family=Merriweather:wght@300&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@400;800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:wght@500;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Preahvihear&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Red+Hat+Text:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/*=========================Custom Properties========================*/
+
+:root {
+  /*========Colors=======*/
+
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --desaturated-dark-blue: hsl(214, 17%, 51%);
+  --grayish-blue: hsl(212, 23%, 69%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+  --white: hsl(0, 0%, 100%);
+
+  /*=====Typography====*/
+
+  --font-family-Manrope: "Manrope", sans-serif;
+}
+
+/*=========================Reset===========================*/
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button,
+a,
+span,
+input {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+button,
+input {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 30px;
+  scrollbar-width: thin;
+}
+
+body {
+  font-family: var(--font-family-Manrope);
+  font-size: 12px;
+  background-color: var(--light-grayish-blue);
+}
+
+/*=========================Reused styles===========================*/
+
+.container {
+  padding: 30px 20px;
+}
+
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-items-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.card-title,
+.user-name {
+  color: var(--very-dark-grayish-blue);
+}
+
+.popup {
+  background-color: var(--very-dark-grayish-blue);
+}
+
+/*============Animations==========*/
+
+@keyframes mobilePopupSlideUp {
+  from {
+    bottom: -100%;
+  }
+  to {
+    bottom: 0;
+  }
+}
+
+@keyframes dekstopPopupReveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*=========================Main styles===========================*/
+
+.article-card {
+  max-width: 355px;
+  margin-inline: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.card-banner {
+  aspect-ratio: 20/12;
+}
+
+.card-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 30px 25px 20px;
+  background-color: var(--white);
+}
+
+.card-title {
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.card-text {
+  margin-block: 25px;
+  line-height: 1.7;
+  color: var(--desaturated-dark-blue);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.user-profile {
+  gap: 10px;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.user-name {
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.date {
+  color: var(--grayish-blue);
+  font-weight: 500;
+  margin-block-start: 3px;
+}
+
+.share-btn {
+  padding: 8px 7px;
+  border-radius: 50%;
+  background-color: var(--light-grayish-blue);
+  max-width: max-content;
+}
+
+.share-btn:focus {
+  background-color: var(--very-dark-grayish-blue);
+}
+
+.share-btn:focus svg path {
+  fill: var(--white);
+}
+
+.article-card:has(.share-btn:focus) .mobile-popup {
+  animation: mobilePopupSlideUp 600ms ease forwards;
+}
+
+/*==========Mobile share popup=========*/
+
+.mobile-popup {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 15px 25px;
+  gap: 15px;
+  bottom: -100%;
+}
+
+.social-list {
+  gap: 12px;
+}
+
+.popup-share-btn {
+  background-color: var(--desaturated-dark-blue);
+  margin-inline-start: auto;
+}
+
+.popup-title {
+  color: var(--grayish-blue);
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-size: 13px;
+}
+
+[data-desktop-popup] {
+  display: none;
+}
+
+/*===========Desktop View=========*/
+
+.desktop-popup {
+  bottom: 25%;
+  right: -5%;
+  padding: 8px 22px;
+  gap: 10px;
+  border-radius: 8px;
+  opacity: 0;
+}
+.desktop-popup .popup-title {
+  font-size: 10px;
+}
+
+.desktop-popup .social-link {
+  width: 13px;
+  height: 13px;
+}
+
+.article-card:has(.share-btn:focus) .desktop-popup {
+  animation: dekstopPopupReveal 300ms ease forwards;
+}
+
+@media (min-width: 992px) {
+  [data-mobile-popup] {
+    display: none;
+  }
+
+  [data-desktop-popup] {
+    display: flex;
+  }
+
+  .article-card {
+    max-width: 800px;
+    grid-template-columns: 0.6fr 1fr;
+    overflow: visible;
+  }
+
+  .card-title {
+    max-width: 30ch;
+  }
+
+  .card-text {
+    text-wrap: balance;
+  }
+
+  .card-banner {
+    aspect-ratio: 1/1;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+  }
+
+  .card-content {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .card-banner img {
+    object-position: left;
+  }
+
+  .arrow-shape {
+    left: 50%;
+    bottom: -30%;
+    width: 0;
+    height: 0;
+    border-top: 12px solid var(--very-dark-grayish-blue);
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+  }
+}
