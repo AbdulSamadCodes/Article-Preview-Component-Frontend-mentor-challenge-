@@ -282,10 +282,15 @@ body {
     display: flex;
   }
 
+  .container {
+    padding-block: 0;
+  }
+
   .article-card {
     max-width: 800px;
     grid-template-columns: 0.6fr 1fr;
     overflow: visible;
+    transform: translateY(50%);
   }
 
   .card-title {
